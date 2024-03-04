@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+
+
+    {{!-- oPEN WEATHER API --}}
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+     <div class="main-container">
+              <h2 class="header">{{>header}}</h2>
+              <article class="widgets">
+                <form action="" class="weatherLocation">
+                    <input type="text" class="input-files" placeholder="Enter your city name ">
+                    <button type="submit" class="search-button">Weather</button>
+
+
+                    {{!-- <div class="lon-lan-class" >
+                        <input type="text" class="form-control" class="latitude" name="latitude" placeholder="Latitude" required>
+                        <input type="text" class="form-control" class="longitude" name="longitude" placeholder="Longitude" required>
+                        
+                        <button onclick="getLatLon()" type="button" class="btn btn-secondary btn-block">Get Your Latitude Longitude</button>
+                        </div> --}}
+         
+        
+                </form>
+                <div class="icon-amd-weatherInfo">
+                    <div class="weather-icon">
+                        <i></i>
+                    </div>
+                    <div class="weatherInfo">
+                        <div class="temperature"><span></span></div>
+                        <div class="weatherCondition"></div>
+                        
+                    </div>
+                    <div>
+                        <div class="latitude"></div>
+                        <div class="longitude"></div>
+                    </div>
+                </div>
+                <div class="place"></div>
+                <div class="date"></div>
+         
+              </article>
+
+    </div>
+    <script type="text/javascript" src="/js/script.js"></script>
+</body>
+</html>
